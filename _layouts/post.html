@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
@@ -72,7 +73,7 @@ layout: default
 {% if site.comments %}
 {% endif %}
 
-{% if site.comments %}
+{% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
 
