@@ -3,7 +3,7 @@ layout:     post
 title:      first blog for jekyll
 date:       2015-07-11
 summary:    test by twkch
-comments: true
+comments:   true
 ---
 
 * No Pain, No Gain
