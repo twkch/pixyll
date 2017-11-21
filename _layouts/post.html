@@ -72,6 +72,7 @@ layout: default
 {% if site.comments %}
 {% endif %}
 
+{% if site.comments %}
 <div id="disqus_thread"></div>
 <script>
 
@@ -80,7 +81,7 @@ layout: default
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "{{ site.url }}{{ page.url }}";  
+this.page.url = "{{site.url}}{{page.url}}";  
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
@@ -91,4 +92,4 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+{% endif %}
